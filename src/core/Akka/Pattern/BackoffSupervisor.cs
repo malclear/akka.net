@@ -13,7 +13,7 @@ using Akka.Util;
 namespace Akka.Pattern
 {
     /// <summary>
-    /// Actor used to supervise actors with ability to restart them after back-off timeout occurred. 
+    /// Actor used to supervise a child actor with the ability to restart it after a back-off timeout has occurred. 
     /// It's designed for cases when i.e. persistent actor stops due to journal unavailability or failure. 
     /// In this case it is better to wait before restart.
     /// </summary>
